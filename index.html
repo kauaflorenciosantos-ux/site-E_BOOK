@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>-comercee.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">Informações</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Explicações</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contato</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>E-comercee.</h1>
+        <h2>Produtos / contato / fornecedor</h2>
+        <div id="menu">
+            <a onclick="showabout()">Informações</a>
+            <a onclick="showwork()">Explicações</a>
+            <a onclick="showcontact()">contato</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Explicações.</h1>
+        <section>
+            <h2>Por onde começar ?</h2>
+            <p>
+                Iniciar um e-commerce exige um plano simples: defina o que vai vender e para quem, escolha entre vender em marketplaces (como Mercado Livre ou Shopee) ou criar sua própria loja virtual (via Nuvemshop ou Shopify), e estruture a logística de entregas e recebimentos.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Shoppe</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Amazon</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Mercado Livre</div>
+            </div>
+            <button class="btn_one">Shopify</button>
+            <button class="btn_two">NuvemShop</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>Informações.</h1>
+            <section>
+                <h2>Como funciona.</h2>
+                <p>
+                    E-commerce (ou comércio eletrônico) é a compra e venda de produtos e serviços feita totalmente pela internet. Ele substitui a loja física por transações digitais, englobando desde a escolha do produto até o pagamento e a entrega, através de sites, redes sociais ou aplicativos.
+                </p>
+                <p>
+                    
+                </p>
+            </section>
+            <section>
+                <h2>É importante ?</h2>
+                <p>
+                    O e-commerce é fundamental porque transforma a internet em uma vitrine global e acessível, permitindo que empresas vendam 24 horas por dia. Ele expande o alcance geográfico, reduz custos operacionais em comparação a lojas físicas e oferece conveniência e personalização aos consumidores.
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contato.</h1>
+            <section>
+                <h2>Me mande algo 😁</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="nome" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="Mensagem" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
